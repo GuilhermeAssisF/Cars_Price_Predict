@@ -1,0 +1,70 @@
+# ========================
+# 🐍 Python & Backend
+# ========================
+# Byte-compiled / Otimizados / DLLs
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ambientes Virtuais (Virtual Envs)
+venv/
+.venv/
+env/
+.env
+
+# Logs e Databases locais
+*.log
+*.sqlite
+*.db
+
+# ========================
+# 🧠 Machine Learning & Data
+# ========================
+# Modelos pesados e binários
+*.pkl
+*.joblib
+*.h5
+*.hdf5
+
+# Datasets (Dados brutos)
+*.csv
+*.xlsx
+*.json
+
+# Exceção: Se você quiser subir um JSON de configuração, use "!" antes do nome
+# !config.json
+
+# ========================
+# 💻 Frontend (Node/React)
+# ========================
+# Dependências (Nunca suba isso!)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Builds de produção (Vite/React gera isso)
+dist/
+build/
+
+# Variáveis de ambiente locais
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ========================
+# 🛠 IDEs & Sistema
+# ========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ========================
+# 🚀 Específicos do seu Projeto
+# ========================
+# Garantindo que os arquivos citados no README não subam se forem recriados
+modelo_carros.pkl
+encoders.pkl
+car_price_dataset.csv
