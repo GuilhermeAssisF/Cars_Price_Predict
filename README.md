@@ -89,29 +89,30 @@ python treinar_modelo.py
 
 # 3. Inicie o servidor
 python app.py
-# O servidor rodará em: [http://127.0.0.1:5000](http://127.0.0.1:5000)
+O servidor rodará em: [http://127.0.0.1:5000](http://127.0.0.1:5000)
 
 ---
 
 ### Passo 2: Frontend (Interface)
 
-# 1. Entre na pasta do frontend
+**1. Entre na pasta do frontend**
 cd frontend-carros
 
-# 2. Instale as dependências
+**2. Instale as dependências**
 npm install
 
-# 3. Rode o projeto
+**3. Rode o projeto**
 npm run dev
-# Acesse o link local: http://localhost:5173
+
+**Acesse o link local: http://localhost:5173**
 
 ---
 
 ### Documentação da API
-# POST /predict
+**POST /predict**
 Recebe as características do veículo e retorna o preço estimado.
 
-# Exemplo de Request (JSON):
+**Exemplo de Request (JSON):**
 
 JSON
 
@@ -127,7 +128,7 @@ JSON
     "Owner_Count": 1
 }
 
-# Exemplo de Response (200 OK):
+**Exemplo de Response (200 OK):**
 
 JSON
 
@@ -137,7 +138,7 @@ JSON
     "mensagem": "Cálculo realizado com sucesso!"
 }
 
-# Estrutura de Arquivos
+**Estrutura de Arquivos**
 Plaintext
 
 /projeto-ml-carros
