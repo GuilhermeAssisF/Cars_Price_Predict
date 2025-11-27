@@ -108,12 +108,14 @@ npm run dev
 
 ---
 
-### Documentação da API
-**POST /predict**
+## Documentação da API
+
+### `POST /predict`
 Recebe as características do veículo e retorna o preço estimado.
 
 **Exemplo de Request (JSON):**
 
+```json
 {
     "Brand": "Toyota",
     "Model": "Corolla",
@@ -125,20 +127,23 @@ Recebe as características do veículo e retorna o preço estimado.
     "Doors": 4,
     "Owner_Count": 1
 }
+````
 
 **Exemplo de Response (200 OK):**
 
-JSON
-
+```json
 {
     "sucesso": true,
     "preco_previsto": "23500.00",
     "mensagem": "Cálculo realizado com sucesso!"
 }
+```
 
-**Estrutura de Arquivos**
-Plaintext
+-----
 
+## Estrutura de Arquivos
+
+```text
 /projeto-ml-carros
 │
 ├── app.py                  # API Flask
@@ -152,3 +157,4 @@ Plaintext
     │   ├── App.jsx         # Lógica do Frontend
     │   └── App.css         # Estilos
     └── package.json
+```
