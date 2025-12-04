@@ -81,40 +81,41 @@ O modelo foi treinado com **10.000 registros** de dados históricos de veículos
 
 ### Passo 1: Backend (API)
 
-# 1. Instale as bibliotecas Python
+**1. Instale as bibliotecas Python**
 pip install pandas scikit-learn flask flask-cors joblib
 
-# 2. (Opcional) Treine o modelo novamente
+**2. (Opcional) Treine o modelo novamente**
 python treinar_modelo.py
 
-# 3. Inicie o servidor
+**3. Inicie o servidor**
 python app.py
-# O servidor rodará em: [http://127.0.0.1:5000](http://127.0.0.1:5000)
+O servidor rodará em: [http://127.0.0.1:5000](http://127.0.0.1:5000)
 
 ---
 
 ### Passo 2: Frontend (Interface)
 
-# 1. Entre na pasta do frontend
+**1. Entre na pasta do frontend**
 cd frontend-carros
 
-# 2. Instale as dependências
+**2. Instale as dependências**
 npm install
 
-# 3. Rode o projeto
+**3. Rode o projeto**
 npm run dev
-# Acesse o link local: http://localhost:5173
+
+**Acesse o link local: http://localhost:5173**
 
 ---
 
-### Documentação da API
-# POST /predict
+## Documentação da API
+
+### `POST /predict`
 Recebe as características do veículo e retorna o preço estimado.
 
-# Exemplo de Request (JSON):
+**Exemplo de Request (JSON):**
 
-JSON
-
+```json
 {
     "Brand": "Toyota",
     "Model": "Corolla",
@@ -126,20 +127,23 @@ JSON
     "Doors": 4,
     "Owner_Count": 1
 }
+````
 
-# Exemplo de Response (200 OK):
+**Exemplo de Response (200 OK):**
 
-JSON
-
+```json
 {
     "sucesso": true,
     "preco_previsto": "23500.00",
     "mensagem": "Cálculo realizado com sucesso!"
 }
+```
 
-# Estrutura de Arquivos
-Plaintext
+-----
 
+## Estrutura de Arquivos
+
+```text
 /projeto-ml-carros
 │
 ├── app.py                  # API Flask
@@ -153,3 +157,4 @@ Plaintext
     │   ├── App.jsx         # Lógica do Frontend
     │   └── App.css         # Estilos
     └── package.json
+```
