@@ -21,7 +21,7 @@ env/
 # 🧠 Machine Learning & Data
 # ========================
 # Modelos pesados e binários
-*.pkl
+# *.pkl
 *.joblib
 *.h5
 *.hdf5
